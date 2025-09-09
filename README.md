@@ -1,8 +1,5 @@
-# DATA-AI-Testing-Framework
-Autonomous Data Testing Framework for EDAG — OSS LLMs (Llama3) + RAG + Multi-Agent MCP
-
-# 🧪 **DATA AI Data Testing Framework (OSS)**  
-> *Autonomous, Layer-Wise Data Validation for Datalake → EDW → Datamart → QlikSense — Powered by Open-Source LLMs, RAG & Multi-Agent MCP*
+# 🧪 EDAG AI Data Testing Framework (OSS)
+> Autonomous, Layer-Wise Data Validation for Datalake → EDW → Datamart → QlikSense — Powered by Open-Source LLMs, RAG & Multi-Agent MCP
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
@@ -13,9 +10,9 @@ Autonomous Data Testing Framework for EDAG — OSS LLMs (Llama3) + RAG + Multi-A
 
 ## ✅ What is This?
 
-A **100% open-source, AI-driven data testing framework** designed for the **DATA platform** (or any modern data stack) that:
+A **100% open-source, AI-driven data testing framework** designed for the **EDAG platform** (or any modern data stack) that:
 
-- 🤖 **Autonomously generates test scripts** per layer (Datalake, DWH, Datamart, Reporting) using **local LLMs** (Llama 3, Mistral, Phi-3 via Ollama).
+- 🤖 **Autonomously generates test scripts** per layer (Datalake, EDW, Datamart, Reporting) using **local LLMs** (Llama 3, Mistral, Phi-3 via Ollama).
 - 📚 **Interprets mapping docs & interface specs** via **RAG** (LlamaIndex + ChromaDB).
 - 🤝 **Coordinates validation across layers** using **Multi-Agent Collaborative Planning (MCP)** with Microsoft AutoGen.
 - 🧩 **Self-healing & adaptive** — learns from test history, adjusts tolerances, detects drift.
@@ -23,54 +20,38 @@ A **100% open-source, AI-driven data testing framework** designed for the **DATA
 
 ---
 
-## 🚀 Key Features
+## 📁 Project Structure
 
-| Feature                  | Tech Used                          |
-|--------------------------|------------------------------------|
-| **LLM-Powered Script Gen** | Llama 3 / Mistral / Phi-3 (Ollama) |
-| **Dynamic Spec Reading**   | RAG (LlamaIndex + Chroma + SentenceTransformers) |
-| **Cross-Layer Coordination** | AutoGen Multi-Agent MCP            |
-| **Test Execution**         | PySpark, SQL, Python, Qlik API     |
-| **UI Dashboard**           | Streamlit                          |
-| **Workflow Orchestration** | Prefect / Airflow                  |
-| **OCR for Dashboards**     | PaddleOCR + OpenCV (Optional)      |
-| **Zero Cloud Dependency**  | 100% On-Prem / Local Execution     |
+- `agents/` — Layer-specific AI agents (Datalake, EDW, Datamart, Reporting)
+- `rag/` — RAG ingestion & querying (LlamaIndex + ChromaDB)
+- `autogen/` — Multi-agent MCP orchestration (AutoGen)
+- `specs/` — Sample mapping documents
+- `ui/` — Streamlit dashboard
+- `workflows/` — Prefect/Airflow pipelines
+- `configs/` — Configuration files
+- `docs/` — Documentation
 
 ---
 
-## 📁 Project Structure
-- 🤖 `agents/` — AI Agents for each layer
-- 📚 `rag/` — RAG engine for specs
-- 🤝 `autogen/` — Multi-Agent Collaboration
-- 📄 `specs/` — Mapping documents
-- 🧪 `tests/generated/` — Auto-test scripts
-- 🖼️ `ui/` — Dashboard
-- ⚙️ `workflows/` — Pipelines
+## ⚙️ Quick Start
 
-🌐 Use Cases
-✅ Automate data validation script creation for large EDW migrations
-✅ Reduce testing cycle time by 70% with AI-generated scripts
-✅ Ensure consistency from raw ingestion → business dashboards
-✅ Enable non-technical teams to “ask” the system to validate rules in plain English
-✅ Self-healing tests adapt to schema changes — no manual updates needed
+```bash
+git clone https://github.com/YOUR-USERNAME/edag-ai-testing-oss.git
+cd edag-ai-testing-oss
 
-🤝 Contributing
-We ❤️ contributions!
+# Setup
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-Add connectors: Snowflake, BigQuery, Power BI, etc.
-Improve RAG accuracy with fine-tuned embeddings
-Build Grafana dashboards or CI/CD integrations
-Add Kubernetes deployment templates
-👉 See CONTRIBUTING.md
+# Pull local LLM
+ollama pull llama3:8b-instruct-q4_K_M
 
-📜 License
-MIT — Use freely in commercial and open-source projects.
+# Ingest sample spec
+python rag/ingest.py --input specs/datalake/ --collection datalake_specs
 
-🧑‍💻 Built For
-Data Engineers
-Data Quality Analysts
-Platform Architects
-AI/ML Engineers
-DevOps / MLOps Teams
-📬 Contact / Support
-Created with ❤️ for intelligent, open, and autonomous data platforms.
+# Run agent
+python agents/datalake_agent.py
+
+# Launch dashboard
+streamlit run ui/dashboard.py
