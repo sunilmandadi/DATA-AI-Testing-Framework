@@ -39,14 +39,13 @@ A **100% open-source, AI-driven data testing framework** designed for the **DATA
 ---
 
 ## 📁 Project Structure
-edag-ai-testing-oss/
-├── agents/ # Layer-specific AI agents
-├── rag/ # RAG ingestion & querying
-├── autogen/ # Multi-agent MCP orchestration
-├── specs/ # Sample mapping docs (YAML, PDF, TXT)
-├── tests/generated/ # Auto-generated test scripts
-├── ui/ # Streamlit dashboard
-└── workflows/ # Prefect/Airflow pipelines
+- 🤖 `agents/` — AI Agents for each layer
+- 📚 `rag/` — RAG engine for specs
+- 🤝 `autogen/` — Multi-Agent Collaboration
+- 📄 `specs/` — Mapping documents
+- 🧪 `tests/generated/` — Auto-test scripts
+- 🖼️ `ui/` — Dashboard
+- ⚙️ `workflows/` — Pipelines
 
 🌐 Use Cases
 ✅ Automate data validation script creation for large EDW migrations
