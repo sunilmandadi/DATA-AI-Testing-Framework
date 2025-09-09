@@ -1,0 +1,16 @@
+Table: customer_landing
+Format: Parquet
+Location: /datalake/landing/customer/
+Schema:
+  - cust_id: string (NOT NULL)
+  - name: string
+  - email: string (NULL tolerance < 5%)
+  - ingest_date: date
+Partitioned by: ingest_date
+SLA: Must arrive by 06:00 AM daily
+File Naming: customer_YYYYMMDD.parquet
+Expected Daily Volume: 1M - 5M records
+Data Quality Rules:
+  - cust_id must be 10-digit alphanumeric
+  - email must contain '@' and '.'
+  - name must be uppercase

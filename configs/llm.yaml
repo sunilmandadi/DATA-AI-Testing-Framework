@@ -1,0 +1,19 @@
+# LLM Configuration for EDAG AI Testing Framework
+model: llama3
+temperature: 0.2
+max_tokens: 1024
+base_url: http://localhost:11434/v1
+api_key: ollama
+timeout: 60
+top_p: 0.9
+frequency_penalty: 0.0
+presence_penalty: 0.0
+
+# Model variants (uncomment to use)
+# model: mistral:7b-instruct-v0.2-q4_K_M
+# model: phi3:mini
+# model: qwen:7b
+
+# For production, consider:
+# - Lower temperature for deterministic outputs
+# - Higher max_tokens for complex validations
