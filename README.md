@@ -1,4 +1,4 @@
-# 🧪 EDAG AI Data Testing Framework (OSS)
+# 🧪 DATA AI Data Testing Framework (OSS)
 > Autonomous, Layer-Wise Data Validation for Datalake → EDW → Datamart → QlikSense — Powered by Open-Source LLMs, RAG & Multi-Agent MCP
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,7 +10,7 @@
 
 ## ✅ What is This?
 
-A **100% open-source, AI-driven data testing framework** designed for the **EDAG platform** (or any modern data stack) that:
+A **100% open-source, AI-driven data testing framework** designed for the **DATA platform** (or any modern data stack) that:
 
 - 🤖 **Autonomously generates test scripts** per layer (Datalake, EDW, Datamart, Reporting) using **local LLMs** (Llama 3, Mistral, Phi-3 via Ollama).
 - 📚 **Interprets mapping docs & interface specs** via **RAG** (LlamaIndex + ChromaDB).
