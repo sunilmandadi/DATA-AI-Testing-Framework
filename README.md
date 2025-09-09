@@ -47,3 +47,31 @@ edag-ai-testing-oss/
 ├── tests/generated/ # Auto-generated test scripts
 ├── ui/ # Streamlit dashboard
 └── workflows/ # Prefect/Airflow pipelines
+
+🌐 Use Cases
+✅ Automate data validation script creation for large EDW migrations
+✅ Reduce testing cycle time by 70% with AI-generated scripts
+✅ Ensure consistency from raw ingestion → business dashboards
+✅ Enable non-technical teams to “ask” the system to validate rules in plain English
+✅ Self-healing tests adapt to schema changes — no manual updates needed
+
+🤝 Contributing
+We ❤️ contributions!
+
+Add connectors: Snowflake, BigQuery, Power BI, etc.
+Improve RAG accuracy with fine-tuned embeddings
+Build Grafana dashboards or CI/CD integrations
+Add Kubernetes deployment templates
+👉 See CONTRIBUTING.md
+
+📜 License
+MIT — Use freely in commercial and open-source projects.
+
+🧑‍💻 Built For
+Data Engineers
+Data Quality Analysts
+Platform Architects
+AI/ML Engineers
+DevOps / MLOps Teams
+📬 Contact / Support
+Created with ❤️ for intelligent, open, and autonomous data platforms.
