@@ -23,7 +23,7 @@ A **100% open-source, AI-driven data testing framework** designed for the **DATA
 ## 📁 Project Structure
 
 - `agents/` — Layer-specific AI agents (Datalake, EDW, Datamart, Reporting)
-- `rag/` — RAG ingestion & querying (LlamaIndex + ChromaDB)
+- `rag/` — Powered by vector embeddings and RAG (built with LlamaIndex + ChromaDB)
 - `autogen/` — Multi-agent MCP orchestration (AutoGen)
 - `specs/` — Sample mapping documents
 - `ui/` — Streamlit dashboard
