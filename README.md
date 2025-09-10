@@ -35,7 +35,7 @@ A **100% open-source, AI-driven data testing framework** designed for the **DATA
 ## **UI:**
 <img width="1341" height="583" alt="image" src="https://github.com/user-attachments/assets/9dc0638b-71b7-46aa-9e47-baf70dec7b6c" />
 
-
+---
 ## ⚙️ Quick Start
 
 ```bash
@@ -59,6 +59,7 @@ python agents/datalake_agent.py
 # Launch dashboard
 streamlit run ui/dashboard.py
 
+---
 🧠 Architecture
 
 AI Agents – Handle validations at each layer.
@@ -70,7 +71,7 @@ MCP Orchestration – Multi-agent collaboration using AutoGen.
 Workflow Integration – Orchestrated via Prefect/Airflow.
 
 UI Layer – Interactive monitoring via Streamlit.
-
+---
 📜 License
 
 MIT License © 2025
