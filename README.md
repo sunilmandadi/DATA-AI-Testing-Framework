@@ -32,6 +32,9 @@ A **100% open-source, AI-driven data testing framework** designed for the **DATA
 - `docs/` — Documentation
 
 ---
+## **UI:**
+<img width="1341" height="583" alt="image" src="https://github.com/user-attachments/assets/9dc0638b-71b7-46aa-9e47-baf70dec7b6c" />
+
 
 ## ⚙️ Quick Start
 
