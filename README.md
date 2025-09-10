@@ -58,9 +58,9 @@ python agents/datalake_agent.py
 
 # Launch dashboard
 streamlit run ui/dashboard.py
-
 ---
-🧠 Architecture
+
+## 🧠 Architecture
 
 AI Agents – Handle validations at each layer.
 
@@ -71,7 +71,9 @@ MCP Orchestration – Multi-agent collaboration using AutoGen.
 Workflow Integration – Orchestrated via Prefect/Airflow.
 
 UI Layer – Interactive monitoring via Streamlit.
+
 ---
-📜 License
+## 📜 License
 
 MIT License © 2025
+---
